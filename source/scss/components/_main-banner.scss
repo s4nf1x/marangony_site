@@ -1,0 +1,183 @@
+.main-banner {
+  margin: 0 0 150px;
+  height: initial;
+  max-width: 100%;
+  overflow: hidden;
+
+  .container {
+    padding: 25px 42px 0;
+  }
+
+  .image-tablet, .image-mobile {
+    display: none;
+  }
+
+  h1 {
+    width: 100%;
+    margin-bottom: 50px;
+    color: $--color-black;
+    margin-left: 0;
+    max-width: 100%;
+    height: initial;
+    letter-spacing: 0;
+
+    span {
+      display: block;
+      width: 100%;
+
+    }
+  }
+
+  .banner-description {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 20px;
+
+    br {
+      display: none;
+    }
+
+    p {
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 30px;
+      text-align: right;
+      color: $--color-black;
+
+      span {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+
+  .banner-wrapper {
+    width: 100%;
+    display: flex;
+    position: relative;
+
+    .banner-image {
+      height: 700px;
+      width: 100%;
+      img {
+        width: 100%;
+        object-fit: cover;
+        height: inherit;
+      }
+    }
+
+    .btn {
+      position: absolute;
+      left: 80px;
+      top: -65px;
+    }
+
+    .banner-video {
+      width: 66%;
+
+      video, iframe {
+        height: 815px;
+      }
+    }
+
+    .banner-form {
+      padding: 70px 31px;
+      background-color: $--color-black;
+      margin-left: 37px;
+      width: 34%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-banner {
+    margin: 0 0 140px;
+
+    .image-tablet {
+      display: block;
+    }
+
+    .image-pc {
+      display: none;
+    }
+
+    .container {
+      padding: 25px 42px 0;
+    }
+
+    h1 {
+      font-size: 70px;
+      line-height: 84px;
+      margin-bottom: 40px;
+    }
+
+    .banner-description {
+      margin-bottom: 10px;
+    }
+
+    .banner-wrapper {
+      .banner-image {
+        height: 440px;
+      }
+      .btn {
+        left: 50px;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 600px) {
+  .main-banner {
+
+    .container {
+      padding: 0 24px;
+    }
+
+    .image-mobile {
+      display: block;
+    }
+
+    .image-tablet {
+      display: none;
+    }
+
+    .banner-wrapper {
+
+      .btn {
+        left: 20px;
+      }
+    }
+
+    .banner-description {
+      margin-bottom: 26px;
+
+      p {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+      }
+    }
+
+    h1 {
+      font-size: 51px;
+      font-weight: 250;
+      line-height: 61px;
+      margin-bottom: 35px;
+
+      span {
+
+        strong {
+
+          b {
+            text-align: right;
+            width: 100%;
+            display: block;
+          }
+        }
+
+      }
+    }
+  }
+}

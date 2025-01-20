@@ -1,0 +1,277 @@
+.single-event-section {
+  margin-bottom: 140px;
+
+  .article-share {
+    margin-top: 40px;
+  }
+
+  .title-block {
+    margin-bottom: 50px;
+    width: 100%;
+
+    h1 {
+      font-size: 60px;
+      font-weight: 300;
+      line-height: 60px;
+      color: $--color-black;
+      width: 100%;
+    }
+
+    .date {
+      font-size: 16px;
+      font-weight: 300;
+      color: $--color-grey-3;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  .single-event-image {
+    width: 100%;
+    height: 526px;
+    margin-bottom: 50px;
+
+    img {
+      width: 100%;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+
+  .single-event-data {
+    width: 100%;
+    margin-bottom: 40px;
+
+    li {
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 41px;
+      color: #000000;
+      strong {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .single-event-buttons {
+    display: flex;
+    align-items: center;
+
+    .btn {
+
+      &:after {
+        content: "";
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 16px;
+        width: 16px;
+        margin-left: 10px;
+        height: 16px;
+        background-image: url(../img/icons/arrow-white-rotated.svg);
+      }
+    }
+
+    .btn-black {
+      margin-left: 10px;
+      background-color: $--color-black;
+      color: $--color-white;
+      cursor: pointer;
+      justify-content: flex-start;
+
+      .btn-title {
+        margin-right: 10px;
+      }
+
+      .btn-links {
+        width: 0;
+        overflow: hidden;
+        visibility: hidden;
+        transition: width 0.5s;
+        display: flex;
+
+        .btn-social {
+          width: 36px;
+          height: 36px;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          display: block;
+        }
+
+        .btn-social + .btn-social {
+          margin-left: 8px;
+        }
+
+        .btn-social-share {
+          background-image: url(../img/icons/share-event-ico.svg);
+        }
+
+        .btn-social-facebook {
+          background-image: url(../img/icons/facebook-event-ico.svg);
+        }
+
+        .btn-social-instagramm {
+          background-image: url(../img/icons/insta-event-ico.svg);
+        }
+
+      }
+
+
+    }
+
+    .btn-trigger-socials.triggered {
+      padding-right: 6px;
+
+      &:after {
+        display: none;
+      }
+
+      .btn-links {
+        width: 124px;
+        visibility: visible;
+        overflow: visible;
+      }
+    }
+
+  }
+
+}
+
+.about-event-section {
+  margin: 140px 0;
+
+  .title-block {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 300;
+    color: $--color-black;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    width: 100%;
+
+    a {
+      color: $--color-black;
+      text-decoration: underline;
+
+      &:hover {
+        color: $--color-red;
+      }
+    }
+
+    p {
+      max-width: 75%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .single-event-section {
+    margin-bottom: 100px;
+
+    .article-share {
+      margin-top: 30px;
+
+      .article-share-links {
+        flex-wrap: wrap;
+        max-width: 60%;
+        justify-content: flex-start;
+        margin: 0 -20px;
+
+        .share-link {
+          padding: 0 20px 20px;
+        }
+      }
+    }
+
+    .title-block {
+      margin-bottom: 40px;
+      h1 {
+        max-width: 90%;
+      }
+    }
+    .single-event-image {
+      margin-bottom: 100px;
+      height: 440px;
+    }
+  }
+
+  .about-event-section {
+    margin: 100px 0;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .single-event-section {
+
+    .article-share {
+
+      .article-share-links {
+        margin: 0 -6px;
+        max-width: 100%;
+
+        .share-link {
+          padding: 0 6px;
+
+          .share-link-title {
+            font-size: 10px;
+            line-height: 12px;
+          }
+
+          .ico-wrapper {
+            width: 46px;
+            height: 46px;
+
+            svg {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .title-block {
+      margin-bottom: 50px;
+
+      h1 {
+        font-size: 37px;
+        line-height: 37px;
+        max-width: 100%;
+      }
+    }
+    .single-event-data {
+      margin-bottom: 30px;
+    }
+  }
+
+  .about-event-section {
+
+    .description {
+
+      p {
+        max-width: 100%;
+      }
+    }
+
+    h3 {
+      font-size: 28px;
+      line-height: 31px;
+      margin-bottom: 15px;
+    }
+
+    .title-block {
+      margin-bottom: 50px;
+    }
+  }
+
+}

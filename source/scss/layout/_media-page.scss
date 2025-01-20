@@ -1,0 +1,44 @@
+.media-section {
+
+  .title-wrapper {
+    margin-bottom: 50px;
+  }
+
+  .content-card-wrapper {
+    margin-bottom: 40px;
+
+  }
+
+
+}
+
+.custom-cards-section .col-lg-4 {
+  margin-bottom: 40px;
+}
+
+.events-list {
+
+  .col-lg-4, .col-lg-3 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .media-section {
+    .content-card-wrapper {
+      margin-bottom: 24px;
+    }
+  }
+
+  .events-list {
+
+    .col-lg-4, .col-lg-3 {
+      margin-bottom: 24px;
+    }
+  }
+
+  .custom-cards-event .col-lg-4 {
+    margin-bottom: 24px;
+  }
+
+}

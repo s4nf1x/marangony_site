@@ -1,0 +1,43 @@
+.text-w-image-banner {
+  margin-top: 20px;
+  margin-bottom: 80px;
+
+  .h2 {
+    margin-bottom: 20px;
+  }
+
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .banner-image {
+
+    img {
+      height: 515px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .banner-description {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .text-w-image-banner {
+
+    .banner-image {
+      margin-bottom: 30px;
+    }
+
+    .col-md-12 {
+
+      &:nth-of-type(2) {
+        order: -1;
+      }
+    }
+  }
+}

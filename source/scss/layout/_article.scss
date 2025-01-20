@@ -1,0 +1,156 @@
+.article-section {
+  margin-top: 100px;
+
+  ul {
+    padding-left: 20px;
+    list-style: disc;
+    li {
+      color: $--color-black;
+      font-size: 16px;
+      line-height: 19px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  ol {
+    padding-left: 20px;
+    list-style: disc;
+
+    li {
+      color: $--color-black;
+      font-size: 16px;
+      line-height: 19px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+
+  h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 20px 0 20px;
+  }
+
+  .article-left {
+
+    .article-dates {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      .date {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 300;
+      }
+
+      .date-pub {
+        color: $--color-grey-3;
+      }
+
+      .date-upd {
+        color: $--color-black;
+      }
+    }
+
+    .article-author {
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 30px;
+      color: $--color-black;
+    }
+
+  }
+
+
+  p {
+    font-size: 16px;
+    line-height: 19px;
+
+    strong {
+      margin-bottom: 15px;
+    }
+
+  }
+
+}
+
+.article-share {
+  margin-top: 100px;
+
+  .h4 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .article-share-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .share-link {
+
+      .share-link-title {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        color: $--color-black;
+      }
+
+      .ico-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F5F5F5;
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        transition: 0.3s;
+
+        svg path {
+          transition: 0.3s;
+        }
+
+        &:hover {
+          background: #C80D3A33;
+
+          svg path {
+            fill: $--color-red-hover;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .article-share {
+
+    .article-share-links {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin: 0 -12px;
+      width: calc(100% + 24px);
+
+      .share-link {
+        padding: 0 12px;
+        margin-bottom: 24px;
+
+        .ico-wrapper {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<!--header.html-->
+<%= _.template(require('../includes/common/header.html').default)({}) %>
+
+
+
+
+<script>
+    document.querySelectorAll('.quiz-input-radio label').forEach((label, index) => {
+        label.addEventListener('click', () => {
+            const input = label.previousElementSibling;
+            if (input && input.type === 'radio') {
+                input.checked = true;
+            }
+        });
+    });
+</script>
+
+<!--footer.html-->
+<%= _.template(require('../includes/common/footer.html').default)({}) %>
